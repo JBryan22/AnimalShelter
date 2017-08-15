@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+<form action="/species/@Model.GetId()" method="post">
+  <label for="name">@Model.GetAnimalSpecies() name: </label>
+  <input type="text" name="name" id="name">
+
+  <label for="gender">Gender: </label>
+  <input type="text" name="gender" id="gender">
+
+  <label for="breed">Breed: </label>
+  <input type="text" name="breed" id="breed">
+
+  <button type="submit">A button!</button>
+</form>
+
+<a href="/">Back Home</a>
+<a href="/species">View all species in shelter</a>
+<a href="/species/@Model.GetId()">Back to @Model.GetAnimalSpecies() list</a>

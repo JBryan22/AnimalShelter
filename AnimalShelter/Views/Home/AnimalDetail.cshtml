@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+<h2>@Model["animals"].GetName()</h2>
+
+<p>@Model["animals"].GetGender()</p>
+<p>@Model["animals"].GetBreed()</p>
+<p>@Model["animals"].GetAdmittance()</p>
+
+<a href="/">Back Home</a>
+<a href="/species">View all species in shelter</a>
+<a href='/species/@Model["species"].GetId()'>Back to @Model["species"].GetAnimalSpecies() list</a>
